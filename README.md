@@ -1,3 +1,2 @@
 # Competitive Programming
-# Problem Solving
 My Solutions for Competitive Programming problems on online judges like CF, LeetCode, HackerRanck, etc...
