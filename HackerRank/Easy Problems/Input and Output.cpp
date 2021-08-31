@@ -3,6 +3,8 @@
 using namespace std;
 
 int main() {
-    printf("Hello, World!");
+    int x, y, z;
+    cin >> x >> y >> z;
+    cout << x + y + z << '\n';
     return 0;
 }
