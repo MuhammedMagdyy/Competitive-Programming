@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-typedef long long ll;
-const int N = 1e5 + 5, M = 1e9 + 7;
-#define read(FILE)  freopen(FILE, "r", stdin)
-#define write(FILE) freopen(FILE, "w", stdout)
-#define all(v) (v).begin(), (v).end()
 
 bool vowel(char str) {
     if (str == 'A' or str == 'E' or str == 'I' or str == 'O' or str == 'U')
@@ -50,8 +45,7 @@ void solve() {
             if (i != j) {
                 if (vowel(char(i + 'A')) and vowel(char(j + 'A')) or !vowel(char(i + 'A')) and !vowel(char(j + 'A'))) {
                     res += (2 * freqLetters[j]);
-                } else if (vowel(char(i + 'A')) and !vowel(char(j + 'A')) or !vowel(char(i + 'A')) and
-                           vowel(char(j + 'A'))) {
+                } else if (vowel(char(i + 'A')) and !vowel(char(j + 'A')) or !vowel(char(i + 'A')) and vowel(char(j + 'A'))) {
                     res += freqLetters[j];
                 }
             }
@@ -62,7 +56,7 @@ void solve() {
 }
 
 int main() {
-    ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
+    ios_base::sync_with_stdio(false), cin.tie(nullptr);
     int cases;
     cin >> cases;
     for (int i = 1; i <= cases; ++i) {
